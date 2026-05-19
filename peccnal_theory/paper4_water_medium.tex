@@ -1,0 +1,134 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{cite}
+\geometry{a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\title{\textbf{Water as Simultaneous Fuel, Moderator and Reaction Medium\\
+for Proton--Electron Capture Chain Reactions\\
+with Lithium-6 Energy Extraction}}
+\author{Eymen Aydoğan}
+\date{May 19, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We propose that ordinary water (H$_2$O) is an ideal reaction medium
+for the PECCNAL proton--electron capture mechanism, serving
+simultaneously as fuel source (hydrogen atoms), neutron moderator,
+and reaction containment. Each water molecule provides 10 electrons
+as potential capture targets (2 from hydrogen, 8 from oxygen),
+offering electron density 11,000 times higher than hydrogen gas at
+standard conditions. Produced neutrons are naturally moderated by
+hydrogen nuclei in water before reaching a dissolved Lithium-6
+target, which releases 4.78 MeV per neutron capture. The system
+requires no cryogenic cooling, operates at room temperature, and
+uses the most abundant liquid on Earth as its primary fuel.
+\end{abstract}
+
+\noindent\textbf{Keywords:} water medium, neutron moderation,
+proton-electron capture, lithium-6, room temperature, LENR
+
+\hrule\vspace{1em}
+
+\section{Introduction}
+Previous papers in this series~\cite{aydogan2026a} employed
+hydrogen or deuterium gas as the reaction medium. Here we propose
+that liquid water offers substantial advantages as a reaction medium
+for the PECCNAL mechanism, combining high electron density, natural
+neutron moderation, and near-zero material cost.
+
+\section{Water as Reaction Medium}
+
+\subsection{Electron Density Advantage}
+
+\begin{table}[h!]
+\centering
+\caption{Electron density comparison across reaction media}
+\vspace{0.5em}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Medium} & \textbf{Density} & \textbf{e$^-$/molecule} & \textbf{Rel. density} \\
+\midrule
+H$_2$ gas (STP) & 0.09 kg/m$^3$ & 2 & 1$\times$ \\
+H$_2$ gas (100 atm) & 9 kg/m$^3$ & 2 & 100$\times$ \\
+Liquid H$_2$ & 70 kg/m$^3$ & 2 & 778$\times$ \\
+\textbf{Liquid H$_2$O} & \textbf{1000 kg/m$^3$} & \textbf{10} & \textbf{111,000$\times$} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The electron density advantage of water means a free proton
+travelling through water encounters an electron target
+111,000 times more frequently than in hydrogen gas at STP.
+
+\subsection{Natural Neutron Moderation}
+
+Produced neutrons must reach thermal energies for efficient
+Li-6 capture. In water:
+\begin{equation}
+n + {}^1\text{H} \rightarrow {}^2\text{H} + \gamma
+\quad \sigma_\text{thermal} = 0.33\,\text{barn}
+\end{equation}
+
+Water is the most effective neutron moderator known, used in
+pressurized water reactors (PWR) worldwide. Neutrons thermalize
+within centimetres of their production point, maximizing
+Li-6 capture probability.
+
+\subsection{Lithium-6 Dissolution}
+
+Lithium carbonate (Li$_2$CO$_3$) dissolves in water, distributing
+Li-6 uniformly throughout the reaction volume:
+\begin{equation}
+n + {}^6\text{Li} \rightarrow {}^4\text{He} + {}^3\text{H}
++ 4.78\,\text{MeV}
+\end{equation}
+
+\section{Reaction Sequence in Water Medium}
+
+\begin{align}
+p + e^-_\text{(H$_2$O)} &\rightarrow n + \nu_e
+\quad -1.293\,\text{MeV} \tag{W1}\\
+n + {}^1\text{H}_\text{(H$_2$O)} &\rightarrow {}^2\text{H} + \gamma
+\quad +2.224\,\text{MeV} \tag{W2}\\
+n + {}^6\text{Li}_\text{(dissolved)} &\rightarrow {}^4\text{He} + {}^3\text{H}
+\quad +4.780\,\text{MeV} \tag{W3}
+\end{align}
+
+Net energy per cycle:
+\begin{equation}
+E_\text{net} = 2.224 + 4.780 - 1.293 = \boxed{+5.711\,\text{MeV}}
+\end{equation}
+
+\section{Practical Advantages}
+
+\begin{itemize}
+\item \textbf{No cryogenics}: operates at room temperature
+\item \textbf{Self-shielding}: water absorbs most radiation
+\item \textbf{Abundant fuel}: seawater contains $\sim$35 ppm Li
+\item \textbf{Low cost}: water and Li$_2$CO$_3$ are inexpensive
+\item \textbf{Scalable}: volume scales cubically with linear dimension
+\end{itemize}
+
+\section{Conclusion}
+Water is proposed as the optimal reaction medium for PECCNAL,
+offering 111,000$\times$ higher electron density than hydrogen gas,
+built-in neutron moderation, and compatibility with dissolved Li-6.
+Net energy output is 5.711 MeV per cycle with no cryogenic
+requirements.
+
+\section*{Acknowledgments}
+The author thanks the nuclear and LENR physics communities.
+
+\begin{thebibliography}{9}
+\bibitem{aydogan2026a} E. Aydoğan, ``Coulomb-Barrier-Free Neutron Production,'' arXiv preprint, 2026.
+\bibitem{pdg2022} R. L. Workman et al. (PDG), \textit{Prog. Theor. Exp. Phys.}, 083C01, 2022.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,279 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{cite}
+
+\geometry{
+  a4paper,
+  top=2.5cm,
+  bottom=2.5cm,
+  left=2.5cm,
+  right=2.5cm
+}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+\title{\textbf{Coulomb-Barrier-Free Neutron Production via\\
+Proton--Electron Capture in Dense Hydrogen Gas\\
+with Lithium-6 Energy Extraction}}
+
+\author{Eymen Aydoğan}
+
+\date{May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We propose a theoretical mechanism for neutron production and energy
+extraction that entirely avoids the Coulomb barrier. A free proton
+injected into dense hydrogen gas interacts with a bound electron via
+electrostatic attraction, producing a neutron through inverse beta
+decay ($p + e^- \rightarrow n + \nu_e$). The liberated hydrogen
+nucleus then becomes a free proton, capable of repeating the reaction
+on a neighboring hydrogen atom, forming a self-propagating chain.
+Produced neutrons are captured by Lithium-6, releasing 4.78 MeV per
+event via $n + {}^6\text{Li} \rightarrow {}^4\text{He} + {}^3\text{H}
++ 4.78\,\text{MeV}$. The net energy output per cycle is 3.487 MeV.
+The mechanism requires no Coulomb barrier crossing and represents a
+novel conceptual pathway for low-energy neutron-driven nuclear energy.
+\end{abstract}
+
+\noindent\textbf{Keywords:} inverse beta decay, Coulomb barrier,
+chain reaction, neutron capture, lithium-6, LENR, hydrogen gas
+
+\hrule
+\vspace{1em}
+
+\section{Introduction}
+
+The Coulomb barrier is the primary obstacle in achieving controlled
+nuclear reactions at low energies. In conventional fusion, two
+positively charged nuclei must overcome a repulsive potential on the
+order of 1 MeV at nuclear distances, requiring extreme temperatures
+or pressures to proceed at useful rates.
+
+We propose a fundamentally different approach: instead of fusing two
+positive nuclei, we exploit the \emph{attractive} interaction between
+a free proton and a bound electron in a hydrogen atom. Since the
+proton and electron carry opposite charges, no repulsive Coulomb
+barrier exists. The resulting neutrons, being electrically neutral,
+can penetrate target nuclei without any Coulomb barrier, making
+Lithium-6 an ideal energy extraction target.
+
+\section{Reaction Mechanism}
+
+\subsection{Step 1: Neutron Production}
+
+A free proton with kinetic energy $E_k \geq 1.293$ MeV moves through
+dense hydrogen gas. Upon approaching a hydrogen atom, the proton is
+attracted to the bound electron:
+
+\begin{equation}
+  F = -\frac{e^2}{4\pi\epsilon_0 r^2} \quad (\text{attractive, no Coulomb barrier})
+\end{equation}
+
+When the proton and electron interact at sufficiently close range,
+inverse beta decay proceeds:
+
+\begin{equation}
+  p + e^- \rightarrow n + \nu_e \qquad \Delta mc^2 = -1.293\,\text{MeV}
+  \label{eq:capture}
+\end{equation}
+
+\subsection{Step 2: Chain Reaction}
+
+After Eq.~\eqref{eq:capture}, the original hydrogen nucleus is
+released as a new free proton. This proton repeats the process on the
+next hydrogen atom, forming a chain:
+
+\begin{align}
+  p^{(1)} + \text{H}_1 &\rightarrow n_1 + \nu_e + p^{(2)} \tag{C1} \\
+  p^{(2)} + \text{H}_2 &\rightarrow n_2 + \nu_e + p^{(3)} \tag{C2} \\
+  &\vdots \notag \\
+  p^{(i)} + \text{H}_i &\rightarrow n_i + \nu_e + p^{(i+1)} \tag{Ci}
+\end{align}
+
+Each step consumes one hydrogen atom and produces one neutron and
+one free proton that sustains the chain.
+
+\subsection{Step 3: Energy Extraction via Lithium-6}
+
+Produced neutrons are directed into a Lithium-6 blanket:
+
+\begin{equation}
+  n + {}^6\text{Li} \rightarrow {}^4\text{He} + {}^3\text{H}
+  + 4.78\,\text{MeV}
+  \label{eq:licapture}
+\end{equation}
+
+This reaction is exothermic, emits no gamma radiation, and
+the kinetic energy of products thermalizes into usable heat.
+
+\section{Energy Balance}
+
+\begin{table}[h!]
+\centering
+\caption{Energy budget per complete reaction cycle}
+\vspace{0.5em}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Process} & \textbf{Energy} & \textbf{Direction} \\
+\midrule
+$p + e^- \rightarrow n + \nu_e$                               & 1.293 MeV & Input  \\
+$n + {}^6\text{Li} \rightarrow {}^4\text{He} + {}^3\text{H}$ & 4.780 MeV & Output \\
+\midrule
+\textbf{Net per cycle}                                         & \textbf{3.487 MeV} & \textbf{Output} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{equation}
+  \boxed{E_\text{net} = 4.780 - 1.293 = 3.487\,\text{MeV per neutron}}
+\end{equation}
+
+\subsection{Chain Sustainability}
+
+The chain sustains itself when each liberated proton retains
+sufficient energy to trigger the next capture. Ionization losses
+over one mean free path $\lambda$ must not reduce $E_k$ below
+1.293 MeV:
+
+\begin{equation}
+  E_k^{(i+1)} = E_k^{(i)} - 1.293\,\text{MeV} - E_\text{loss}(\lambda)
+  \geq 1.293\,\text{MeV}
+\end{equation}
+
+The mean free path at pressure $P$ and temperature $T$ is:
+
+\begin{equation}
+  \lambda = \frac{k_B T}{\sqrt{2}\,\pi d_H^2\,P}
+\end{equation}
+
+where $d_H \approx 120$ pm. At $P = 100$ atm, $\lambda \approx 2$ nm,
+minimizing ionization losses and favoring chain propagation.
+
+\section{Comparison with Conventional Approaches}
+
+\begin{table}[h!]
+\centering
+\caption{Comparison with related nuclear energy mechanisms}
+\vspace{0.5em}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Feature} & \textbf{D--T Fusion} & \textbf{Fission} & \textbf{This Work} \\
+\midrule
+Coulomb barrier    & High      & None (n)  & \textbf{None} \\
+Fuel               & D, T      & U-235     & H$_2$, Li-6   \\
+Chain mechanism    & No        & Yes       & Yes           \\
+Radioactive waste  & Low       & High      & Low           \\
+Energy per event   & 17.6 MeV  & 200 MeV   & 3.487 MeV     \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Open Challenges}
+
+\begin{enumerate}
+
+  \item \textbf{Energy threshold.}
+    The initiating proton must carry $E_k \geq 1.293$ MeV. A
+    particle accelerator or high-energy ion source is required to
+    start the chain.
+
+  \item \textbf{Ionization losses.}
+    The free proton loses energy traversing hydrogen gas. High
+    pressure operation ($P > 50$ atm) is necessary to keep $\lambda$
+    short enough to sustain the chain.
+
+  \item \textbf{Neutrino energy loss.}
+    Each event emits a neutrino carrying $\sim$0.511 MeV that
+    escapes unrecovered. This is included in the energy balance.
+
+  \item \textbf{Neutron capture efficiency.}
+    Neutrons must reach the Li-6 blanket before escaping or
+    thermalizing elsewhere. Neutron reflectors and optimized
+    geometry are required.
+
+\end{enumerate}
+
+\section{Proposed Experimental Test}
+
+\begin{enumerate}
+
+  \item Compress hydrogen gas to $P > 50$ atm in a chamber
+    surrounded by a Li-6 neutron capture blanket.
+
+  \item Inject a proton beam at $E_k = 5$--20 MeV into the gas.
+
+  \item Measure neutron flux at the Li-6 blanket versus hydrogen
+    pressure. A superlinear dependence on pressure would indicate
+    chain propagation.
+
+  \item Measure heat output via calorimetry. Net output exceeding
+    beam energy input would confirm the energy-positive cycle.
+
+\end{enumerate}
+
+\section{Conclusion}
+
+We have proposed a Coulomb-barrier-free neutron production mechanism
+based on proton--electron capture in dense hydrogen gas, with energy
+extraction via Lithium-6 neutron capture. The key features are:
+
+\begin{itemize}
+  \item No Coulomb barrier (proton--electron attraction).
+  \item Self-propagating chain reaction via liberated protons.
+  \item Net energy output: 3.487 MeV per reaction cycle.
+  \item Abundant, low-cost fuel: hydrogen and Lithium-6.
+\end{itemize}
+
+Whether the chain can sustain itself against ionization losses is
+the central open question, directly testable with existing
+accelerator technology.
+
+\section*{Acknowledgments}
+
+The author thanks the nuclear and LENR physics communities whose
+published work informed this theoretical development.
+
+\begin{thebibliography}{9}
+
+\bibitem{widom2006}
+  A. Widom and L. Larsen,
+  ``Ultra low momentum neutron catalyzed nuclear reactions on metallic
+  hydride surfaces,''
+  \textit{Eur. Phys. J. C}, vol. 46, pp. 107--111, 2006.
+
+\bibitem{fleischmann1989}
+  M. Fleischmann and S. Pons,
+  ``Electrochemically induced nuclear fusion of deuterium,''
+  \textit{J. Electroanal. Chem.}, vol. 261, pp. 301--308, 1989.
+
+\bibitem{pdg2022}
+  R. L. Workman et al. (Particle Data Group),
+  ``Review of Particle Physics,''
+  \textit{Prog. Theor. Exp. Phys.}, 083C01, 2022.
+
+\bibitem{knoll2000}
+  G. F. Knoll,
+  \textit{Radiation Detection and Measurement}, 3rd ed.
+  Wiley, 2000.
+
+\end{thebibliography}
+
+\end{document}

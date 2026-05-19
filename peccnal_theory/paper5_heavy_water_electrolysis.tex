@@ -1,0 +1,155 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{cite}
+\geometry{a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\title{\textbf{Heavy Water Electrolysis with Nickel or Palladium Electrodes\\
+as a Low-Energy Proton--Electron Capture Initiator:\\
+Connection to LENR and the Fleischmann--Pons Effect}}
+\author{Eymen Aydoğan}
+\date{May 19, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We propose a theoretical connection between the Fleischmann--Pons
+electrolysis experiment and the PECCNAL proton--electron capture
+mechanism. Electrolysis of heavy water (D$_2$O) using nickel or
+palladium electrodes drives deuterium ions (D$^+$) into the metal
+lattice, where geometric confinement reduces the proton--electron
+separation to femtometre scales. We argue this enables
+$p + e^- \rightarrow n$ reactions without external energy input,
+as the metal crystal provides the required alignment. Produced
+neutrons initiate the PECCNAL chain, generating excess heat
+detectable via precision calorimetry. This framework provides
+a theoretical basis for the anomalous heat observed in LENR
+experiments.
+\end{abstract}
+
+\noindent\textbf{Keywords:} LENR, cold fusion, heavy water,
+electrolysis, palladium, nickel, Fleischmann-Pons, calorimetry
+
+\hrule\vspace{1em}
+
+\section{Introduction}
+In 1989, Fleischmann and Pons~\cite{fleischmann1989} reported
+anomalous excess heat during electrolysis of D$_2$O using a
+palladium cathode. The result was controversial and poorly
+reproducible, yet some laboratories reported consistent excess
+heat. The Widom--Larsen theory~\cite{widom2006} proposed that
+surface proton--electron capture ($p + e^- \rightarrow n$) could
+explain LENR phenomena.
+
+We extend this framework using the PECCNAL mechanism and propose
+that nickel — far cheaper than palladium — may serve as an
+effective electrode material.
+
+\section{Metal Lattice as Geometric Aligner}
+
+In a metal crystal, deuterium atoms occupy interstitial sites
+separated by $\sim$0.1--0.3 nm. The metal lattice:
+\begin{enumerate}
+\item Confines D atoms at fixed positions
+\item Reduces D--D and D--e$^-$ distances to near-nuclear scales
+\item Provides conduction electrons as capture targets
+\item Eliminates the need for external proton acceleration
+\end{enumerate}
+
+The conduction electron density in nickel is:
+\begin{equation}
+n_e = \frac{\rho N_A Z_\text{valence}}{M}
+= \frac{8908 \times 6.022\times10^{23} \times 2}{58.69}
+= 1.83 \times 10^{29}\,\text{m}^{-3}
+\end{equation}
+
+This is $10^{12}$ times higher than hydrogen gas at STP,
+dramatically increasing capture probability.
+
+\section{Electrolysis Setup}
+
+\begin{table}[h!]
+\centering
+\caption{Proposed electrolysis configuration}
+\vspace{0.5em}
+\begin{tabular}{ll}
+\toprule
+\textbf{Parameter} & \textbf{Value} \\
+\midrule
+Cathode & Nickel or palladium plate/wire \\
+Anode & Stainless steel \\
+Electrolyte & D$_2$O + dissolved Li$_2$CO$_3$ \\
+Voltage & 3--9 V \\
+Current & 0.1--2 A \\
+Temperature & Room temperature \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Li$_2$CO$_3$ serves dual purpose: electrolyte (conductivity)
+and Li-6 source (neutron capture for energy extraction).
+
+\section{Reaction Sequence}
+
+\begin{align}
+\text{D}^+ + e^-_\text{(Ni)} &\rightarrow n + \nu_e \tag{E1}\\
+n + {}^2\text{H} &\rightarrow {}^3\text{H} + p + 2.22\,\text{MeV} \tag{E2}\\
+n + {}^6\text{Li} &\rightarrow {}^4\text{He} + {}^3\text{H} + 4.78\,\text{MeV} \tag{E3}
+\end{align}
+
+\section{Experimental Signature}
+
+Excess heat detection via calorimetry:
+\begin{equation}
+Q_\text{excess} = Q_\text{measured} - Q_\text{electrolysis}
+= mc\Delta T - VIt
+\end{equation}
+
+If $Q_\text{excess} > 0$ and reproducible across multiple trials
+with D$_2$O but not H$_2$O, this constitutes evidence for
+isotope-dependent nuclear reactions consistent with PECCNAL.
+
+\section{Nickel vs Palladium}
+
+\begin{table}[h!]
+\centering
+\caption{Electrode material comparison}
+\vspace{0.5em}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Property} & \textbf{Palladium} & \textbf{Nickel} \\
+\midrule
+Cost & $\sim$50 \$/g & $\sim$0.02 \$/g \\
+D absorption & Excellent & Good \\
+Conduction $e^-$ density & High & High \\
+LENR reports & Many & Several (Rossi E-Cat) \\
+Availability & Limited & Abundant \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Conclusion}
+Heavy water electrolysis with nickel or palladium electrodes
+provides a low-energy pathway to initiate PECCNAL reactions
+without external proton acceleration. The metal lattice acts as
+a geometric aligner, reducing proton--electron separation to
+nuclear scales. Dissolved Li$_2$CO$_3$ enables simultaneous
+neutron energy extraction. This experiment is reproducible in
+a standard laboratory with minimal equipment.
+
+\section*{Acknowledgments}
+The author thanks the LENR research community.
+
+\begin{thebibliography}{9}
+\bibitem{fleischmann1989} M. Fleischmann and S. Pons, \textit{J. Electroanal. Chem.}, 261, 301, 1989.
+\bibitem{widom2006} A. Widom and L. Larsen, \textit{Eur. Phys. J. C}, 46, 107, 2006.
+\bibitem{aydogan2026a} E. Aydoğan, ``Coulomb-Barrier-Free Neutron Production,'' arXiv preprint, 2026.
+\bibitem{pdg2022} R. L. Workman et al. (PDG), \textit{Prog. Theor. Exp. Phys.}, 083C01, 2022.
+\end{thebibliography}
+\end{document}

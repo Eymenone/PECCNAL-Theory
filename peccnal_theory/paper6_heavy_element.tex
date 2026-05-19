@@ -1,0 +1,136 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{cite}
+\geometry{a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\title{\textbf{Multi-Electron Capture Enhancement via Heavy Neutral Elements:\\
+Scaling Proton--Electron Capture Reactions through\\
+High Atomic Number Target Media}}
+\author{Eymen Aydoğan}
+\date{May 19, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We propose that neutral (non-ionized) heavy elements with high
+atomic number $Z$ provide superior target media for the PECCNAL
+proton--electron capture mechanism. A neutral atom with $Z$ electrons
+presents $Z$ sequential capture targets to incoming protons, with
+each electron remaining available until captured. Unlike hydrogen
+($Z=1$, single capture), heavy neutral atoms such as iron ($Z=26$),
+lead ($Z=82$), or bismuth ($Z=83$) can sustain up to $Z$ sequential
+$p + e^- \rightarrow n$ reactions before complete ionization.
+The reaction compactness and high electron density of heavy elements
+dramatically increases neutron production per unit volume.
+\end{abstract}
+
+\noindent\textbf{Keywords:} heavy elements, multi-electron capture,
+high-Z target, neutron production, atomic number scaling
+
+\hrule\vspace{1em}
+
+\section{Introduction}
+In the original PECCNAL framework~\cite{aydogan2026a}, hydrogen
+($Z=1$) serves as the reaction medium with one electron per atom.
+Here we propose that neutral heavy elements offer $Z$ times more
+capture targets per atom, dramatically increasing volumetric
+neutron production.
+
+The key requirement is that the element remain \textbf{neutral}
+(non-ionized), ensuring each electron is electrostatically
+attracted to incoming protons.
+
+\section{Multi-Electron Capture Sequence}
+
+For a neutral atom with atomic number $Z$:
+\begin{align}
+p + e^-_{(1)} &\rightarrow n_1 + \nu_e \tag{H1}\\
+p + e^-_{(2)} &\rightarrow n_2 + \nu_e \tag{H2}\\
+&\vdots \notag\\
+p + e^-_{(Z)} &\rightarrow n_Z + \nu_e \tag{HZ}
+\end{align}
+
+Each step reduces the atom's electron count by 1, with the
+atom progressing from neutral to fully ionized ($Z^+$) after
+$Z$ captures.
+
+\section{Reaction Rate Scaling}
+
+\begin{table}[h!]
+\centering
+\caption{Neutron production capacity by target element}
+\vspace{0.5em}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Element} & \textbf{Z} & \textbf{Max n/atom} & \textbf{Cost} & \textbf{Availability} \\
+\midrule
+Hydrogen (H) & 1 & 1 & Low & Abundant \\
+Iron (Fe) & 26 & 26 & Low & Abundant \\
+Lead (Pb) & 82 & 82 & Low & Abundant \\
+Bismuth (Bi) & 83 & 83 & Low & Moderate \\
+Uranium (U) & 92 & 92$^*$ & High & Restricted \\
+\bottomrule
+\multicolumn{5}{l}{$^*$ Uranium also undergoes fission upon neutron capture: $n + {}^{235}\text{U} \rightarrow 200\,\text{MeV}$}
+\end{tabular}
+\end{table}
+
+\section{Volumetric Neutron Production}
+
+For iron ($Z = 26$) vs hydrogen ($Z = 1$) at the same atomic density:
+\begin{equation}
+\frac{\dot{n}_\text{Fe}}{\dot{n}_\text{H}}
+= Z_\text{Fe} \times \frac{n_\text{Fe}}{n_\text{H}}
+= 26 \times \frac{\rho_\text{Fe}/M_\text{Fe}}{\rho_\text{H}/M_\text{H}}
+= 26 \times \frac{7874/55.85}{0.09/1.008}
+\approx 26 \times 1590 \approx 41,000\times
+\end{equation}
+
+Iron provides approximately 41,000 times more neutrons per unit
+volume than hydrogen gas at STP.
+
+\section{Coulomb Barrier Analysis}
+
+For neutral atoms, the incoming proton experiences attraction
+from the outer electron cloud before reaching the nucleus:
+\begin{equation}
+U(r) = -\frac{e^2}{4\pi\epsilon_0 r}
++ \frac{Ze^2}{4\pi\epsilon_0 r}
+\quad \text{(simplified, outer electron dominates)}
+\end{equation}
+
+At large distances ($r > r_\text{atom}$), the atom appears neutral
+and the proton experiences no net force. As it enters the electron
+cloud, it is attracted to the nearest electron.
+\textbf{No Coulomb barrier exists for proton--electron interaction.}
+
+\section{Practical Considerations}
+
+Lead (Pb, $Z=82$) is proposed as optimal:
+\begin{itemize}
+\item Low cost, widely available
+\item Already used as radiation shielding
+\item High electron density: $n_e = 3.3 \times 10^{30}$ m$^{-3}$
+\item Stable isotopes, no fission risk
+\item Liquid at moderate temperatures (melting point 327°C)
+\end{itemize}
+
+\section{Conclusion}
+Neutral heavy elements with high atomic number $Z$ multiply
+neutron production capacity by up to $Z \times 10^3$ compared
+to hydrogen gas. Lead ($Z=82$) is proposed as the optimal
+practical target, providing high electron density without
+fission risk. This scaling principle enables compact,
+high-output PECCNAL reactor designs.
+
+\begin{thebibliography}{9}
+\bibitem{aydogan2026a} E. Aydoğan, ``Coulomb-Barrier-Free Neutron Production,'' arXiv preprint, 2026.
+\bibitem{pdg2022} R. L. Workman et al. (PDG), \textit{Prog. Theor. Exp. Phys.}, 083C01, 2022.
+\end{thebibliography}
+\end{document}

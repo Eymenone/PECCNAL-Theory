@@ -75,6 +75,6 @@ If you use this work, please cite:
 
 Aydoğan, E. (2026). PECCNAL Theory: Coulomb-Barrier-Free 
 Proton-Electron Capture Chain Reactions. 
-GitHub: github.com/[username]/PECCNAL-Theory
+GitHub: github.com/Eymenone/PECCNAL-Theory
 This repository is the primary timestamp record for the PECCNAL theoretical framework.
 All papers authored by Eymen Aydoğan, May 19, 2026, Istanbul, Turkey.
